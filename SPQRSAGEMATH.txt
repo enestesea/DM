@@ -1,0 +1,4 @@
+from sage.graphs.connectivity import spqr_tree
+g = Graph({"AT":["HU","DE","IT","LI","SK","SL","CZ","CH"],"AL":["GR","MK","ME","RS"],"BY":["LV","LT","PL","UA"],"BE":["FR","LU","NL","DE"],"BG":["GR","MK","RS","RO","TR"],"BA":["HR","ME","RS"],"CZ":["DE","PL","SK"],"DE":["NL","PL","CH","LU"],"EE":["LV"],"FR":["DE","IT","LU","CH"],"GR":["MK","TR"],"HU":["RS","SK","SL","UA","HR"],"HR":["ME","RS","SL"],"IT":["CH","SL"],"LV":["LT"],"LT":["PL"],"LI":["CH"],"MK":["RS"],"ME":["RS"],"MD":["UA","RO"],"PL":["SK","UA"],"RO":["RS","UA"],"SK":["UA"],"RU":["EE","PL","UA","BY","LV","LT"]})
+bct = spqr_tree(g)
+plot(bct)
